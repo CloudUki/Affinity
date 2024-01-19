@@ -36,6 +36,13 @@ nav ul li {
     height: auto;
 }
 
+.car img {
+    border-radius: 25px;
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
 .Blue{
     border-radius: 25px;
     width: 50%;
