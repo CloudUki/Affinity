@@ -33,4 +33,29 @@ if (carousel) {
     });
 }
 });
-  
+
+
+$(document).ready(function () {
+  $('#contact-form').on('submit', function (e) {
+    e.preventDefault();
+
+    const name = $('#name').val();
+    const email = $('#email').val();
+    const number = $('#number').val();
+    const message = $('#message').val();
+
+    console.log('Form submitted with:', { name, email, number, message });
+
+    alert('Thanks for your message, ' + name + '!');
+
+    $(this).trigger('reset');
+  });
+});
+
+$(document).ready(function () {
+  $('.portfolio-image').hide().fadeIn(1000);
+});
+
+$(document).ready(function () {
+  $('.arrow-icon').hide().fadeIn(1000);
+});
