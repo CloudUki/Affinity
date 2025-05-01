@@ -10,42 +10,146 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <header>
-        <section id="navbar-section">
-            <nav class="navbar">
-                <div class="row">
-                    <div class="col">
-                        <a href="/index.html"><img src="/assets/logo.svg" alt="Affinity Logo" class="logo"> </a>
+    <div class="wrapper d-flex flex-column min-vh-100">
+
+        <!--Nav-->
+        <header>
+            <section id="navbar-section">
+                <nav class="navbar">
+                    <div class="row">
+                        <div class="col">
+                            <a href="/index.html"><img src="/assets/logo.svg" alt="Affinity Logo" class="logo"> </a>
+                        </div>
+                        <div class="col" id="nav-links">
+                            <a href="contact.html">Contact</a>
+                            <a href="./portfolio.html">Portfolio</a>
+                            <a href="home-page.html">Home</a>
+                        </div>
                     </div>
-                    <div class="col" id="nav-links">
-                        <a href="/contact.html">Contact</a>
-                        <a href="/portfolio.html">Portfolio</a>
-                        <a href="/index.html">Home</a>
+                </nav>
+            </section>
+        </header>
+
+        <!--Main Section-->
+        <main class="flex-grow-1">
+            <!--First Content-->
+            <section id="first-content"> 
+                <p class="main-text">If you have a liking <br>towards something or <br>someone. Pursue it with <br>your full capability.</p>
+                <a href="#second-content">
+                    <img src="/assets/down.svg" alt="Arrow Icon" class="arrow-icon">
+                </a>
+            </section>
+
+            <!--Second Content-->
+            <section id="second-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" id="offer-text">
+                            <h2 class="offer-title">What We Offer</h2>
+                            <hr class="divider">
+                        </div>
+                        <div class="col-md-6 d-flex flex-column gap-3" id="offerings">
+                            <img src="/assets/car_wrap.svg" alt="Car Wrap" class="img-fluid">
+                            <img src="/assets/photography.svg" alt="Photography" class="img-fluid">
+                            <img src="/assets/paint_protection.svg" alt="Pain Protection" class="img-fluid">
+                            <img src="/assets/racing.svg" alt="Racing" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </section>
-    </header>
-    <main>
-        <!--First Content-->
-        <section id="first-content"> 
-            <p class="main-text">If you have a liking <br>towards something or <br>someone. Pursue it with <br>your full capability.</p>
-            <a href="#second-content">
-                <img src="/assets/down.svg" alt="Arrow Icon" class="arrow-icon">
-            </a>
-        </section>
+            </section>
 
-        <!--Second Content-->
-        <section id="second-content">
-            <div class="container text-center">
-                <h1 class="title">Beautifully Made</h1>
-                <p class="description">We are a team of passionate individuals dedicated to creating beautiful and meaningful experiences.</p>
-                <button class="btn btn-primary" onclick="window.location.href='contact.html'">Contact Us</button>
-            </div>
-        </section>
-    </main>
-    <!-- <footer>
-        <p>&copy; 2025 Affinity</p>
-    </footer> -->
+            <!--Third Content-->
+            <section id="third-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" id="gang-text">
+                            <h2 class="gang-title">Meet The Yang Gang</h2>
+                            <hr class="divider">
+                        </div>
+                        <div class="col-md-6 d-flex flex-column gap-3" id="gang-members">
+
+                            <!-- Brandon -->
+                            <div class="d-flex align-items-center gap-3">
+                            <img src="/assets/brandon.svg" alt="Brandon" class="member-img">
+                            <div>
+                                <p class="mb-1 fw-bold">Brandon Yang</p>
+                                <p class="mb-1">CEO & Programmer</p>
+                                <p class="mb-0">
+                                    <a href="mailto:yang@affinity.studio" class="text-reset">
+                                    melillo@affinity.studio
+                                    </a>
+                                </p>
+                            </div>
+                            </div>    
+                        
+                            <!-- Ted -->
+                            <div class="d-flex align-items-center gap-3">
+                            <img src="/assets/ted.svg" alt="Ted" class="member-img">
+                            <div>
+                                <p class="mb-1 fw-bold">Ted Colegrove</p>
+                                <p class="mb-1">Head of Design</p>
+                                <p class="mb-0">
+                                    <a href="mailto:colegrove@affinity.studio" class="text-reset">
+                                    melillo@affinity.studio
+                                    </a>
+                                </p>
+                            </div>
+                            </div>
+                        
+                            <!-- Maura -->
+                            <div class="d-flex align-items-center gap-3">
+                            <img src="/assets/maura.svg" alt="Maura" class="member-img">
+                            <div>
+                                <p class="mb-1 fw-bold">Maura Strickland</p>
+                                <p class="mb-1">Associate Designer</p>
+                                <p class="mb-0">
+                                    <a href="mailto:strickland@affinity.studio" class="text-reset">
+                                    melillo@affinity.studio
+                                    </a>
+                                </p>
+                            </div>
+                            </div>
+                        
+                            <!-- Olivia -->
+                            <div class="d-flex align-items-center gap-3">
+                            <img src="/assets/olivia.svg" alt="Olivia" class="member-img">
+                            <div>
+                                <p class="mb-1 fw-bold">Olivia Heath</p>
+                                <p class="mb-1">Associate Designer</p>
+                                <p class="mb-0">
+                                    <a href="mailto:heath@affinity.studio" class="text-reset">
+                                    melillo@affinity.studio
+                                    </a>
+                                </p>
+                            </div>
+                            </div>
+                        
+                            <!-- Caroline -->
+                            <div class="d-flex align-items-center gap-3">
+                            <img src="/assets/caroline.svg" alt="Caroline" class="member-img">
+                            <div>
+                                <p class="mb-1 fw-bold">Caroline Melillo</p>
+                                <p class="mb-1">Associate Designer</p>
+                                <p class="mb-0">
+                                    <a href="mailto:melillo@affinity.studio" class="text-reset">
+                                    melillo@affinity.studio
+                                    </a>
+                                </p>
+                            </div>
+                            </div>
+                        </div>                    
+                    </div>                      
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2025 Affinity</p>
+            <img src="/assets/youtube.svg" alt="YouTube" class="footer-logo" id="youtube-logo">
+            <img src="/assets/insta.svg" alt="Instagram" class="footer-logo" id="insta-logo">
+        </footer>
+    </div>
+    <script src="/javascript/app.js"></script>
 </body>
 </html>

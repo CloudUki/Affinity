@@ -1,66 +1,320 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media (max-width: 1024px) {
-    header {
-        background-color: #000;
+:root {
+  --primary-bg: #282828;
+  --text-color: #fff;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+footer {
+  background-color: #000;
+  color: var(--text-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  header {
+    background-color: #000;
+    padding: 1rem 2rem;
+  }
+
+  #navbar-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 300px;
+      height: auto;
     }
+
+    #nav-links {
+      display: flex;
+      gap: 1.5rem;
+
+      a {
+        position: relative;
+        top: 20px;
+        left: 700px;
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 25px;
+      }
+    } 
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem;
+  }
+
+  #first-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .main-text {
+      font-size: 2.2rem;
+      margin-left: 36%;
+      margin-top: 20vh;
+    }
+  
+    .arrow-icon {
+      position: relative;
+      top: 10px;
+      left: 600px;
+      align-self: center;
+      cursor: pointer;
+    }
+  }
+
+  #second-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    #offer-text {
+      font-size: 2rem;
+    }
+  
+    .offer-title {
+      position: relative;
+      left: 60%;
+      font-size: 5rem;
+    }
+  
+    .divider {
+      position: relative;
+      left: 60%;
+      width: 515px;
+      height: 5px;
+      background-color: var(--text-color);
+    }
+  
+    #offerings {
+      position: relative;
+      top: 150px;
+      right: 25%;
+      margin-top: 2rem;
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  #third-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    #gang-text {
+      font-size: 2rem;
+    }
+  
+    .gang-title {
+      position: relative;
+      top: 100px;
+      left: 55%;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+  
+    .divider {
+      position: relative;
+      top: 100px;
+      left: 55%;
+      width: 590px;
+      height: 5px;
+      background-color: var(--text-color);
+    }
+
+    #gang-members {
+      position: relative;
+      top: 200px;
+      right: 45%;
+      margin-top: 2rem;
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+  }
+  footer {
+    position: relative;
+    top: 200;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-logo {
+    height: 24px;
+  }
+
+  #youtube-logo {
+    position: absolute;
+    right: 10%;
+  }
+
+  #insta-logo {
+    position: absolute;
+    right: 20%;
+  }
+
+  footer p {
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
-    header {
-        background-color: #000;
-        font-family: 'Kanit', sans-serif;
+  header {
+    background-color: #000;
+  }
 
-        #navbar-section {
-            padding: 0;
-            margin: 0;
+  #navbar-section {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
 
-            .logo {
-                width: 145px;
-                height: auto;
-            }
+  .logo {
+    width: 145px;
+    height: auto;
+  }
 
-            #nav-links {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin-left: 20px;
-                gap: 20px;
+  #nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    gap: 20px;
+  }
 
-                a {
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 18px;
-                }
-            }
-        }
-    }
+  #nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
 
-    main {
-        background-color: #282828;
-        color: #fff;
-        font-family: 'Kanit', sans-serif;
-        width: 100vw;
-        height: 100vh;
-        padding: 0;
-        margin: 0;
+  main {
+    background-color: #282828;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
 
-        #first-content {
-            .main-text {
-                position: absolute;
-                top: 30%;
-                left: 30px;
-                text-align: left;
-                font-size: 35px;
-            }
+  #first-content {
+    position: relative;
+  }
 
-            .arrow-icon {
-                position: absolute;
-                top: 60%;
-                left: 50%;
-                transform: translateX(-50%);
-                cursor: pointer;
-            }
-        }
-    }
+  .main-text {
+    position: relative;
+    margin-top: 30vh;
+    margin-left: 30px;
+    font-size: 2.2rem;
+  }
+
+  .arrow-icon {
+    position: relative;
+    margin-top: 4rem;
+    margin-left: 150px;
+    align-self: center;
+    transform: translateX(0);
+    cursor: pointer;
+  }
+
+  #second-content {
+    position: relative;
+  }
+
+  #offer-text {
+    font-size: 2rem;
+  }
+
+  .offer-title {
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 30px;
+    font-size: 3rem;
+  }
+
+  .divider {
+    position: relative;
+    margin-left: 12px;
+    margin-top: 0.5rem;
+    width: 350px;
+    height: 5px;
+    background-color: #fff;
+  }
+
+  #offerings {
+    margin-top: 2rem;
+  }
+
+  #third-content {
+    position: relative;
+  }
+
+  #gang-text {
+    font-size: 2rem;
+  }
+
+  .gang-title {
+    position: relative;
+    margin-top: 3rem;
+    margin-left: 6px;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+
+  #third-content .divider {
+    position: relative;
+    margin-left: 8px;
+    margin-top: 0.5rem;
+    width: 350px;
+    height: 5px;
+    background-color: #fff;
+  }
+
+  #gang-members {
+    margin-top: 2rem;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-logo {
+    height: 24px;
+  }
+
+  #youtube-logo {
+    position: absolute;
+    right: 10%;
+  }
+
+  #insta-logo {
+    position: absolute;
+    right: 20%;
+  }
+
+  footer p {
+    margin: 0;
+  }
 }
